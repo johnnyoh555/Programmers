@@ -11,7 +11,7 @@ void ft_1(int sum, int dep, vector<int>& v, vector<int>& r) {
     if (dep == v.size()) {r.push_back(sum); return;}
     for (int i = 0; i < 6; i++) {
         ft_1(sum + d[v[dep]][i], dep + 1, v, r);
-    }    
+    }
 }
 
 void count(vector<int>& a, vector<int>& b) {
